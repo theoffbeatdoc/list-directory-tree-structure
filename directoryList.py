@@ -39,4 +39,7 @@ def tree(dir_path: Path, level: int=-1, limit_to_directories: bool=False,
         print(f'... length_limit, {length_limit}, reached, counted:')
     print(f'\n{directories} directories' + (f', {files} files' if files else ''))
 
-tree(Path.home() / 'Documents')
+
+tree(Path.home() / 'Documents', level=2, limit_to_directories=True, length_limit=100)
+#you might not need to use all the parameters
+#for folders in 'C:\Users\Koustav Sinha Ray\' we do not need to specify the full path, pass 'Documents' as parameter for 'C:\Users\Koustav Sinha Ray\Document'
