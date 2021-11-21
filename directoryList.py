@@ -60,5 +60,6 @@ def ui():
         userLengthLimit = int(input("Enter length limit (default: 1000):"))
         print("Displaying results as per user specified settings:")
         tree(userPath, level=userLevel, limit_to_directories=userlimit_to_directories, length_limit=userLengthLimit)
+    input("Press any key to exit...")
 
 ui()
